@@ -9,7 +9,8 @@ int hcf(int a,int b)
         res--;
     }
     return res;
-    max = (a>b)?x:y;
+    int max;
+    max = (a>b)?a:b;
     while(1)
     {
     if (max%a==0 && max%b == 0)
@@ -18,6 +19,7 @@ int hcf(int a,int b)
     break;
     }
     ++max;
+    }   
     
 }
 int main()
